@@ -20,7 +20,7 @@ public class KafkaProducer {
         LOGGER.info(String.format("Message sent -> %s", message));
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void test() {
         this.sendMessage("message from kafka");
     }
