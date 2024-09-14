@@ -1,0 +1,16 @@
+Since Kafka is a distributed system, it acts as a cluster.
+A Kafka cluster consists of a set of brokers.
+A cluster has a minimum of 3 brokers.
+
+The broker is the Kafka server. It's just a meaningful name given to the Kafka server.
+The producer and consumer don't interact directly. They use the Kafka server as an agent or a broker to exchange messages.
+PRODUCER --> KAFKA BROKER --> CONSUMER
+
+Producer is an application that sends messages.
+
+Consumer is an application that reads messages from the Kafka server.
+
+Topic is like a table in a database or folder in a file system.
+Topic is identified by a name.
+You can have any number of topics.
+
