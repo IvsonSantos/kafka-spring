@@ -5,6 +5,10 @@ A cluster has a minimum of 3 brokers.
 The broker is the Kafka server. It's just a meaningful name given to the Kafka server.
 The producer and consumer don't interact directly. They use the Kafka server as an agent or a broker to exchange messages.
 PRODUCER --> KAFKA BROKER --> CONSUMER
+             Topic 1
+               partition 1
+               partition 2
+               partition 3
 
 Producer is an application that sends messages.
 
@@ -13,4 +17,9 @@ Consumer is an application that reads messages from the Kafka server.
 Topic is like a table in a database or folder in a file system.
 Topic is identified by a name.
 You can have any number of topics.
+
+Kafka topics are divided into a number of partitions, which contain records in an unchangeable sequence.
+
+Kafka Brokers will store messages for a topic. But the capacity of data can be enormous and it may not be possible to store in a single computer.
+Therefore it will be partitioned into multiple parts and distributed among multiple computers since Kafka is a distributed system.
 
